@@ -1,0 +1,111 @@
+<html lang="pl">
+<center><h1>BAZA NARCIARZY</h1></center><br>
+<meta charset="utf-8" />
+<body bgcolor="#AADD00">
+<br>
+<form action=dodaj_zawodnika.php>
+Imię:&nbsp;<input type="text" name="f"/>
+&nbsp;Nazwisko:&nbsp;<input type="text" name="l"/> 
+&nbsp;Data urodzenia (format YYYY-MM-DD):&nbsp;<input type="text" name="b"/> 
+<br><br>
+Narodowość (format ABC):&nbsp;<input type="text" maxlength="3" size="3" name="n"/> 
+&nbsp;Klub:&nbsp;<input type="text" maxlength="30" size="30" name="c"/> 
+&nbsp;<input type="checkbox" name="a" value= TRUE><label>Aktywny</label>
+<br><br>
+&nbsp;Konkurencja:&nbsp;<select name="s">
+<option value="JP">Skoki</option>
+<option value="AL">N. alpejskie</option> 
+</select>
+<input type="submit" value="Dodaj zawodnika"> 
+<br>
+</form>
+<hr>
+<form action=dodaj_sedziego.php>
+Imię:&nbsp;<input type="text" name="f"/>
+&nbsp;Nazwisko:&nbsp;<input type="text" name="l"/> 
+&nbsp;Data urodzenia (format YYYY-MM-DD):&nbsp;<input type="text" name="b"/> 
+<br><br>
+Narodowość (format ABC):&nbsp;<input type="text" maxlength="3" size="3" name="n"/> 
+&nbsp;<input type="checkbox" name="a" value= TRUE><label>Aktywny</label>
+<br><br>
+&nbsp;Konkurencja:&nbsp;<select name="s">
+<option value="JP">Skoki</option>
+<option value="AL">N. alpejskie</option> 
+</select>
+<input type="submit" value="Dodaj sędziego"> 
+<br>
+</form>
+<hr>
+<form action=dodaj_miejsce.php>
+Nazwa:&nbsp;<input type="text" name="v"/>
+&nbsp;Kraj:&nbsp;<input type="text" name="n"/> 
+<br><br>
+<label class="heading">Homologacje:</label>
+<input type="checkbox" name="SL" value="SL"><label>SL</label>
+<input type="checkbox" name="GS" value="GS"><label>GS</label>
+<input type="checkbox" name="SG" value="SG"><label>SG</label>
+<input type="checkbox" name="DH" value="DH"><label>DH</label>
+<input type="checkbox" name="SC" value="SC"><label>SC</label>
+<br><br>
+Skocznia (punkt 'K'):&nbsp;<input type="text" maxlength="3" size="3" name="k"/> 
+</select>
+<input type="submit" value="Dodaj miejsce"> 
+<br>
+</form>
+<hr>
+<form action=dodaj_zawody.php>
+Miejsce:&nbsp;<input type="text" name="v"/>
+&nbsp;Data zawodów (format YYYY-MM-DD):&nbsp;<input type="text" name="b"/> 
+<br><br>
+<input type="Radio" name="d" value="SL"><label>SL</label>
+<input type="Radio" name="d" value="GS"><label>GS</label>
+<input type="Radio" name="d" value="SG"><label>SG</label>
+<input type="Radio" name="d" value="DH"><label>DH</label>
+<input type="Radio" name="d" value="SC"><label>SC</label>
+<input type="Radio" name="d" value="JP"><label>Skoki</label>
+<br><br>
+Sędzia główny:&nbsp;<input type="text" name="r"/> 
+<br><br>
+<input type="checkbox" name="wc" value= TRUE><label>Puchar Świata</label>
+</select>
+<br><br>
+<input type="submit" value="Dodaj zawody">
+<br>
+</form>
+<hr>
+<form action=dodaj_wyniki.php>
+Zawody:&nbsp;<input type="text" name="c"/>
+&nbsp;Zawodnik:&nbsp;<input type="text" name="a"/> 
+<br><br>
+Pierwszy wynik:&nbsp;<input type="text" name="f"/>
+&nbsp;Drugi wynik:&nbsp;<input type="text" name="s"/>
+</select>
+<br><br>
+<input type="submit" value="Dodaj wynik">
+<br>
+</form>
+<hr>
+<form action=aktualizuj.php>
+iD zawodów:&nbsp;<input type="text" name="i"/>
+<input type="submit" value="Aktualizuj punktację">
+</form>
+<hr>
+<form action=dodaj_nacje.php>
+Kraj: &nbsp;<input type="text" maxlength="30" size="30" name="n"/> 
+&nbsp;Skrót:&nbsp;<input type="text" maxlength="3" size="3" name="s"/> 
+<input type="submit" value="Dodaj nację">
+<br>
+</form>
+<hr>
+<form action=szukaj_najlepszego.php>
+Wyszukiwanie najlepszego narciarza w &nbsp;<select name="d">
+<option value="JP">skokach</option>
+<option value="AL">n. alpejskim</option> 
+</select>
+<input type="submit" value="Znajdź">
+<br>
+</form>
+<hr>
+</body>
+</html>
+
