@@ -1,4 +1,4 @@
-# Bazy_danych_1
+# Database systems
 Final project I've done for database course at the Institute of Mathematics (University of Wrocław).
 
 # COURSE SYLLABUS (in Polish)
